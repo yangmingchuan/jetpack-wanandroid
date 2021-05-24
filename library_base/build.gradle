@@ -1,0 +1,18 @@
+ext.isLibrary = true
+apply from: rootProject.file('module.gradle')
+
+dependencies {
+    // 微信 键值对储存
+    api libs.mmkv
+    // 路由
+    api libs.arouter_api
+    api libs.arouter_compiler
+
+    api depend_plugins.kotlin_stdlib
+    api depend_plugins.core_ktx
+    api depend_plugins.appcompat
+    api depend_plugins.material
+    api depend_plugins.constraintlayout
+    api depend_plugins.lifecycle_extensions
+
+}

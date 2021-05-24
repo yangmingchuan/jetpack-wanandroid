@@ -1,0 +1,143 @@
+ext {
+
+    build_version = [
+            compileSdkVersion: 29,
+            buildToolsVersion: '29.0.3',
+            minSdkVersion    : 23,
+            applicationId    : "com.ymc.componentmaster",
+            targetSdkVersion : 29,
+            versionCode      : 1000100,
+            versionName      : '1.0.1'
+    ]
+
+    versions = [
+            android_plugin         : '4.0.1',
+            kotlin_version         : '1.3.72',
+            kotlin_coroutines      : '1.3.9',
+
+            support                : '28.0.0',
+            arch_comp_lifecycle    : '1.1.1',
+            multidex               : '1.0.3',
+            paging                 : '2.1.2',
+            room                   : '1.1.1',
+
+
+            androidx_version       : '1.3.1',
+            appcompat_version      : '1.2.0',
+            material_version       : '1.0.0',
+            constraintlayout       : '1.1.3',
+            navigation_fragment    : '2.1.0',
+            navigation_ui          : '2.1.0',
+            lifecycle              : '2.1.0',
+            navigation_fragment_ktx: '2.1.0',
+            navigation_ui_ktx      : '2.1.0',
+            junit                  : '4.12',
+            junit_test             : '1.1.1',
+            espresso_core          : '3.2.0',
+            gson                   : '2.8.6',
+            startup                : '1.0.0-alpha03',
+
+            mmkv                   : '1.2.2',
+
+            glide                  : '4.11.0',
+
+            retrofit               : '2.9.0',
+            okhttp                 : '4.8.1',
+
+            ijk                    : '0.8.4',
+            android_x              : '1.1.0',
+    ]
+
+    build_plugins = [
+            android_gradle: [group: 'com.android.tools.build', name: 'gradle', version: versions.android_plugin],
+            kotlin_gradle : [group: 'org.jetbrains.kotlin', name: 'kotlin-gradle-plugin', version: versions.kotlin_version]
+    ]
+
+    depend_plugins = [
+            kotlin_stdlib          : [group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib', version: versions.kotlin_version],
+            // 协程    https://github.com/Kotlin/kotlinx.coroutines
+            kotlin_coroutines      : [group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-android', version: versions.kotlin_coroutines],
+            kotlin_coroutines_core : [group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-core', version: versions.kotlin_coroutines],
+
+            core_ktx               : [group: 'androidx.core', name: 'core-ktx', version: versions.androidx_version],
+            // android x
+            appcompat              : [group: 'androidx.appcompat', name: 'appcompat', version: versions.appcompat_version],
+            android_x              : [group: 'androidx.annotation', name: 'annotation', version: versions.android_x],
+            material               : [group: 'com.google.android.material', name: 'material', version: versions.material_version],
+            constraintlayout       : [group: 'androidx.constraintlayout', name: 'constraintlayout', version: versions.constraintlayout],
+            navigation_fragment    : [group: 'androidx.navigation', name: 'navigation-fragment', version: versions.navigation_fragment],
+            navigation_ui          : [group: 'androidx.navigation', name: 'navigation-ui', version: versions.navigation_ui],
+
+            lifecycle_extensions   : [group: 'androidx.lifecycle', name: 'lifecycle-extensions', version: versions.lifecycle],
+            lifecycle_java8        : [group: 'androidx.lifecycle', name: 'lifecycle-common-java8', version: versions.lifecycle],
+            lifecycle_compiler     : [group: 'androidx.lifecycle', name: 'lifecycle-compiler', version: versions.lifecycle],
+            lifecycle_viewmodel    : [group: 'androidx.lifecycle', name: 'lifecycle-viewmodel', version: versions.lifecycle],
+            lifecycle_livedata     : [group: 'androidx.lifecycle', name: 'lifecycle-livedata', version: versions.lifecycle],
+            lifecycle_runtime      : [group: 'androidx.lifecycle', name: 'lifecycle-runtime', version: versions.lifecycle],
+
+            navigation_fragment_ktx: [group: 'androidx.navigation', name: 'navigation-fragment-ktx', version: versions.navigation_fragment_ktx],
+            navigation_ui_ktx      : [group: 'androidx.navigation', name: 'navigation-ui-ktx', version: versions.navigation_ui_ktx],
+            junit                  : [group: 'junit', name: 'junit', version: versions.junit],
+            junit_test             : [group: 'androidx.test.ext', name: 'junit', version: versions.junit_test],
+            espresso_core          : [group: 'androidx.test.espresso', name: 'espresso-core', version: versions.espresso_core],
+            //https://github.com/google/gson
+            gson                   : [group: 'com.google.code.gson', name: 'gson', version: versions.gson],
+
+    ]
+
+
+    libs = [
+            support_v4           : [group: 'com.android.support', name: 'support-v4', version: versions.support],
+            support_v7           : [group: 'com.android.support', name: 'appcompat-v7', version: versions.support],
+            support_v13          : [group: 'com.android.support', name: 'support-v13', version: versions.support],
+            design               : [group: 'com.android.support', name: 'design', version: versions.support],
+            recyclerview         : [group: 'com.android.support', name: 'recyclerview-v7', version: versions.support],
+            cardview             : [group: 'com.android.support', name: 'cardview-v7', version: versions.support],
+            annotations          : [group: 'com.android.support', name: 'support-annotations', version: versions.support],
+
+            paging               : [group: 'androidx.paging', name: 'paging-runtime', version: versions.paging],
+            paging_rxjava        : [group: 'androidx.paging', name: 'paging-rxjava2', version: versions.paging],
+
+            arch_comp_extensions : [group: 'android.arch.lifecycle', name: 'extensions', version: versions.arch_comp_lifecycle],
+            arch_comp_java8      : [group: 'android.arch.lifecycle', name: 'common-java8', version: versions.arch_comp_lifecycle],
+            arch_comp_compiler   : [group: 'android.arch.lifecycle', name: 'compiler', version: versions.arch_comp_lifecycle],
+            arch_comp_viewmodel  : [group: 'android.arch.lifecycle', name: 'viewmodel', version: versions.arch_comp_lifecycle],
+            arch_comp_livedata   : [group: 'android.arch.lifecycle', name: 'livedata', version: versions.arch_comp_lifecycle],
+            arch_comp_livedata_rx: [group: 'android.arch.lifecycle', name: 'reactivestreams', version: versions.arch_comp_lifecycle],
+            arch_comp_runtime    : [group: 'android.arch.lifecycle', name: 'runtime', version: versions.arch_comp_lifecycle],
+
+            multidex             : [group: 'com.android.support', name: 'multidex', version: versions.multidex],
+            startup              : [group: 'androidx.startup', name: 'startup-runtime', version: versions.startup],
+
+            //阿里路由框架    https://github.com/alibaba/ARouter
+            "arouter_api"        : "com.alibaba:arouter-api:1.5.0",
+            "arouter_compiler"   : "com.alibaba:arouter-compiler:1.2.2",
+
+            // room
+            room                 : [group: 'android.arch.persistence.room', name: 'runtime', version: versions.room],
+            room_compiler        : [group: 'android.arch.persistence.room', name: 'compiler', version: versions.room],
+            room_rxjava          : [group: 'android.arch.persistence.room', name: 'rxjava2', version: versions.room],
+            room_test            : [group: 'android.arch.persistence.room', name: 'testing', version: versions.room],
+
+            //https://github.com/Tencent/MMKV
+            mmkv                 : [group: 'com.tencent', name: 'mmkv', version: versions.mmkv],
+            mmkv_static          : [group: 'com.tencent', name: 'mmkv-static', version: versions.mmkv],
+
+            //glide     https://github.com/bumptech/glide
+            glide                : [group: 'com.github.bumptech.glide', name: 'glide', version: versions.glide],
+            glide_compiler       : [group: 'com.github.bumptech.glide', name: 'compiler', version: versions.glide],
+
+            //https://github.com/square/okhttp
+            okhttp3              : [group: 'com.squareup.okhttp3', name: 'okhttp', version: versions.okhttp],
+            okhttp3_logging      : [group: 'com.squareup.okhttp3', name: 'logging-interceptor', version: versions.okhttp],
+
+            //retrofit      https://github.com/square/retrofit
+            retrofit2            : [group: 'com.squareup.retrofit2', name: 'retrofit', version: versions.retrofit],
+            retrofit2_gson       : [group: 'com.squareup.retrofit2', name: 'converter-gson', version: versions.retrofit],
+            retrofit2_rxjava     : [group: 'com.squareup.retrofit2', name: 'adapter-rxjava2', version: versions.retrofit],
+            //ijk
+            ijk                  : [group: 'tv.danmaku.ijk.media', name: 'ijkplayer-java', version: versions.ijk],
+
+    ]
+
+}
