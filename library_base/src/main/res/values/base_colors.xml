@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--应用的主要色调,actionBar默认使用该颜色,Toolbar导航栏的底色-->
+    <color name="colorPrimary">@color/white</color>
+    <!--状态栏颜色,应用的主要暗色调,statusBarColor默认使用该颜色-->
+    <color name="colorPrimaryDark">@color/white</color>
+    <!--CheckBox,RadioButton,SwitchCompat等一般控件的选中效果默认采用该颜色-->
+    <color name="colorAccent">@color/colorTheme</color>
+    <!--控件按压时的色调-->
+    <!--默认按钮的背景颜色-->
+    <!--窗口背景颜色-->
+    <!--底部栏颜色-->
+
+    <!--主题颜色-->
+    <color name="colorTheme">#00C6FF</color>
+    <!--所有界面的状态栏的背景颜色-->
+    <!--所有界面的标题栏的背景颜色-->
+    <!--所有界面的分割线颜色-->
+    <color name="colorLine">#EAEAEA</color>
+
+
+    <!-- 一级标题、正文字体颜色，二级页面导航栏返回键/其他图标颜色 -->
+    <color name="colorTitle">#1F2336</color>
+    <!-- 二级标题、正文字体颜色 -->
+    <!-- 辅助字体（注释、时间等）颜色 -->
+    <!-- 提示性文字 -->
+
+
+    <!--黑色透明度-->
+    <color name="black_70">#B3000000</color>
+
+    <!--常见颜色-->
+
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 黑色 -->
+    <!-- 金色 -->
+    <!-- 黄色 -->
+    <!-- 橙色 -->
+    <!-- 红色 -->
+    <!-- 灰色 -->
+    <!-- 淡灰色-->
+    <!-- 紫色 -->
+    <!-- 青色 -->
+    <!-- 绿色 -->
+    <!-- 蓝色 -->
+    <!-- 粉色 -->
+    <!--透明 -->
+    <!--半透明-->
+
+</resources>
