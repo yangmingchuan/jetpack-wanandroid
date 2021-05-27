@@ -1,8 +1,9 @@
-package com.ymc.library_base.net
+package com.ymc.library_base.base
 
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.ymc.library_base.net.Status
 import com.ymc.library_base.net.exception.ResponseThrowable
 import com.ymc.library_base.net.interceptor.IData
 import kotlinx.coroutines.*

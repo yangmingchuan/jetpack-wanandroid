@@ -79,7 +79,7 @@ object ToastUtils : Serializable {
         @SuppressLint("InflateParams")
         val toastLayout =
             (context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater)
-                .inflate(R.layout._toast_layout, null)
+                .inflate(R.layout.base_toast_layout, null)
         val toastIcon = toastLayout.findViewById<ImageView>(R.id.toast_icon)
         val toastText = toastLayout.findViewById<TextView>(R.id.toast_text)
         if (bgRes != -1) {

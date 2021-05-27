@@ -61,6 +61,10 @@ android {
         }
     }
 
+    kotlinOptions{
+        jvmTarget = "1.8"
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -86,6 +90,12 @@ android {
     aaptOptions {
         //停用 PNG 处理
         cruncherEnabled false
+    }
+
+    // 4.0
+    buildFeatures {
+        dataBinding true
+        viewBinding true
     }
 
 }

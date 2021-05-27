@@ -6,7 +6,7 @@ dependencies {
     api libs.mmkv
     // 路由
     api libs.arouter_api
-    api libs.arouter_compiler
+    kapt libs.arouter_compiler
 
     api depend_plugins.kotlin_stdlib
     api depend_plugins.core_ktx
@@ -14,6 +14,12 @@ dependencies {
     api depend_plugins.material
     api depend_plugins.constraintlayout
     api depend_plugins.lifecycle_extensions
+
+    //room
+    api libs.room
+    api libs.room_common
+    api libs.room_ktx
+    kapt libs.room_compiler
 
     api libs.support_v7, libs.design
     // jetpack

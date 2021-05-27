@@ -1,4 +1,4 @@
-package com.ymc.common.interfaces
+package com.ymc.library_base.interfaces
 
 import android.os.Bundle
 import com.ymc.library_base.interfaces.ILifecycle
@@ -25,6 +25,6 @@ interface IView : ILifecycle {
     /**
      * 处理重量级数据、逻辑
      */
-    abstract fun initViewData()
+    abstract fun initViewData(savedInstanceState: Bundle?)
 
 }

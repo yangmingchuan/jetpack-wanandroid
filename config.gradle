@@ -18,8 +18,8 @@ ext {
             support                : '28.0.0',
             arch_comp_lifecycle    : '1.1.1',
             multidex               : '1.0.3',
-            paging                 : '2.1.2',
-            room                   : '1.1.1',
+            paging                 : '3.0.0-beta01',
+            room                   : '2.3.0-alpha01',
 
 
             androidx_version       : '1.3.1',
@@ -96,7 +96,7 @@ ext {
             annotations          : [group: 'com.android.support', name: 'support-annotations', version: versions.support],
 
             paging               : [group: 'androidx.paging', name: 'paging-runtime', version: versions.paging],
-            paging_rxjava        : [group: 'androidx.paging', name: 'paging-rxjava2', version: versions.paging],
+            paging_common        : [group: 'androidx.paging', name: 'paging-common', version: versions.paging],
 
             arch_comp_extensions : [group: 'android.arch.lifecycle', name: 'extensions', version: versions.arch_comp_lifecycle],
             arch_comp_java8      : [group: 'android.arch.lifecycle', name: 'common-java8', version: versions.arch_comp_lifecycle],
@@ -114,10 +114,10 @@ ext {
             "arouter_compiler"   : "com.alibaba:arouter-compiler:1.2.2",
 
             // room
-            room                 : [group: 'android.arch.persistence.room', name: 'runtime', version: versions.room],
-            room_compiler        : [group: 'android.arch.persistence.room', name: 'compiler', version: versions.room],
-            room_rxjava          : [group: 'android.arch.persistence.room', name: 'rxjava2', version: versions.room],
-            room_test            : [group: 'android.arch.persistence.room', name: 'testing', version: versions.room],
+            room                 : [group: 'androidx.room', name: 'room-runtime', version: versions.room],
+            room_common          : [group: 'androidx.room', name: 'room-common', version: versions.room],
+            room_ktx             : [group: 'androidx.room', name: 'room-ktx', version: versions.room],
+            room_compiler        : [group: 'androidx.room', name: 'room-compiler', version: versions.room],
 
             //https://github.com/Tencent/MMKV
             mmkv                 : [group: 'com.tencent', name: 'mmkv', version: versions.mmkv],
