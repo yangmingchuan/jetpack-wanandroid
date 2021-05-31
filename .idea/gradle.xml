@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/library_base" />
             <option value="$PROJECT_DIR$/library_ijk" />
+            <option value="$PROJECT_DIR$/model_home" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

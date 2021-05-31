@@ -1,3 +1,4 @@
+include ':model_home'
 include ':library_ijk'
 include ':library_base'
 include ':app'
