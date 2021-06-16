@@ -10,7 +10,7 @@ object PermissionsManager {
 
     private const val REQUEST_TASK = 101
 
-    fun calendarTaskWithPermissionCheck(
+    fun withPermissionCheck(
         target: PermissionsDialog,
         permissions: Array<String>
     ) {
@@ -27,6 +27,32 @@ object PermissionsManager {
             }
         } else {
             target.onPermissionsTask()
+        }
+    }
+
+    fun onRequestPermissionsResult(
+        target: PermissionsDialog, requestCode: Int,
+        grantResults: IntArray,
+        permissions: Array<String>
+    ) {
+        when (requestCode) {
+            REQUEST_TASK -> {
+                if (PermissionUtils.verifyPermissions(*grantResults)) {
+                    target.onPermissionsTask()
+                } else {
+                    if (!PermissionUtils.shouldShowRequestPermissionRationale(
+                            target,
+                            permissions
+                        )
+                    ) {
+                        target.onNeverAskAgain()
+                    } else {
+                        target.onDenied()
+                    }
+                }
+            }
+            else -> {
+            }
         }
     }
 
