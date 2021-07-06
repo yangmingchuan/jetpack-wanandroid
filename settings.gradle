@@ -1,4 +1,3 @@
-include ':module_wan_android'
 include ':library_ijk'
 include ':library_base'
 include ':app'

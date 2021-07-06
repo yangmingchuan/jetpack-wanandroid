@@ -17,7 +17,7 @@ ext {
 
             support                : '28.0.0',
             arch_comp_lifecycle    : '1.1.1',
-            multidex               : '1.0.3',
+            multidex               : '2.0.1',
             paging                 : '3.0.0-beta01',
             room                   : '2.3.0-alpha01',
 
@@ -46,6 +46,11 @@ ext {
 
             ijk                    : '0.8.4',
             android_x              : '1.1.0',
+
+            recyclerview           : "1.1.0",
+            cardview               : "1.0.0",
+
+            androidx_navigation      : "2.3.5",
     ]
 
     build_plugins = [
@@ -75,6 +80,9 @@ ext {
             lifecycle_livedata     : [group: 'androidx.lifecycle', name: 'lifecycle-livedata', version: versions.lifecycle],
             lifecycle_runtime      : [group: 'androidx.lifecycle', name: 'lifecycle-runtime', version: versions.lifecycle],
 
+            androidx_navigation      : [group: 'androidx.navigation', name: 'navigation-fragment-ktx', version: versions.androidx_navigation],
+            androidx_nav_ktx      : [group: 'androidx.navigation', name: 'navigation-ui-ktx', version: versions.androidx_navigation],
+
             navigation_fragment_ktx: [group: 'androidx.navigation', name: 'navigation-fragment-ktx', version: versions.navigation_fragment_ktx],
             navigation_ui_ktx      : [group: 'androidx.navigation', name: 'navigation-ui-ktx', version: versions.navigation_ui_ktx],
             junit                  : [group: 'junit', name: 'junit', version: versions.junit],
@@ -87,13 +95,9 @@ ext {
 
 
     libs = [
-            support_v4           : [group: 'com.android.support', name: 'support-v4', version: versions.support],
-            support_v7           : [group: 'com.android.support', name: 'appcompat-v7', version: versions.support],
-            support_v13          : [group: 'com.android.support', name: 'support-v13', version: versions.support],
-            design               : [group: 'com.android.support', name: 'design', version: versions.support],
-            recyclerview         : [group: 'com.android.support', name: 'recyclerview-v7', version: versions.support],
-            cardview             : [group: 'com.android.support', name: 'cardview-v7', version: versions.support],
-            annotations          : [group: 'com.android.support', name: 'support-annotations', version: versions.support],
+            recyclerview         : [group: 'androidx.recyclerview', name: 'recyclerview', version: versions.recyclerview],
+            cardview             : [group: 'androidx.cardview', name: 'cardview', version: versions.cardview],
+            annotation           : [group: 'androidx.annotation', name: 'annotation', version: versions.annotation_],
 
             paging               : [group: 'androidx.paging', name: 'paging-runtime', version: versions.paging],
             paging_common        : [group: 'androidx.paging', name: 'paging-common', version: versions.paging],
@@ -106,7 +110,6 @@ ext {
             arch_comp_livedata_rx: [group: 'android.arch.lifecycle', name: 'reactivestreams', version: versions.arch_comp_lifecycle],
             arch_comp_runtime    : [group: 'android.arch.lifecycle', name: 'runtime', version: versions.arch_comp_lifecycle],
 
-            multidex             : [group: 'com.android.support', name: 'multidex', version: versions.multidex],
             startup              : [group: 'androidx.startup', name: 'startup-runtime', version: versions.startup],
 
             //阿里路由框架    https://github.com/alibaba/ARouter
@@ -137,6 +140,8 @@ ext {
             retrofit2_rxjava     : [group: 'com.squareup.retrofit2', name: 'adapter-rxjava2', version: versions.retrofit],
             //ijk
             ijk                  : [group: 'tv.danmaku.ijk.media', name: 'ijkplayer-java', version: versions.ijk],
+
+            multidex             : [group: 'androidx.multidex', name: 'multidex', version: versions.multidex],
 
     ]
 

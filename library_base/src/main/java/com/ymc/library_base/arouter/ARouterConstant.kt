@@ -19,4 +19,7 @@ object ARouterConstant {
     //视频界面
     const val VIDEO_ACTIVITY = "/video/VideoActivity"
 
+    //wanandroid
+    const val WAN_MAIN = "/app/MainActivity"
+    const val WAN_MAIN_FRAGMENT = "/wan/WanMainFragment"
 }

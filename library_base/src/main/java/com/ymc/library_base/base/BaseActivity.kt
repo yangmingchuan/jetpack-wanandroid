@@ -19,7 +19,7 @@ import com.ymc.library_base.widget.LoadingDialog
 abstract class BaseActivity<T : ViewDataBinding> : AppCompatActivity(), IView {
 
     private lateinit var mLoadingDialog: LoadingDialog
-
+    protected val TAG = javaClass.canonicalName
     var mBinding: T? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
