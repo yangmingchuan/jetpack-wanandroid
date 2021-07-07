@@ -11,6 +11,5 @@ android {
 
 dependencies {
 
-    api depend_plugins.androidx_navigation
-    api depend_plugins.androidx_nav_ktx
+
 }

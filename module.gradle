@@ -243,6 +243,10 @@ dependencies {
         kapt libs.room_compiler
     }
 
+    //nav fragment
+    implementation depend_plugins.androidx_navigation
+    implementation depend_plugins.androidx_nav_ktx
+
 }
 
 

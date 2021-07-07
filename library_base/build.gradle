@@ -38,4 +38,15 @@ dependencies {
     api([libs.okhttp3, libs.okhttp3_logging])
     // gson  https://github.com/google/gson
     api depend_plugins.gson
+
+    //koin kotlin
+    api depend_plugins.koin_core
+    api depend_plugins.koin_core_ext
+    //koin androidx
+    api depend_plugins.koin_x_scope
+    api depend_plugins.koin_x_viewmodel
+    api depend_plugins.koin_x_fragment
+    api depend_plugins.koin_x_ext
+
+    api libs.loadsir
 }
