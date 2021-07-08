@@ -55,6 +55,8 @@ ext {
             koin                   : "2.2.0-rc-3",
 
             loadsir                : "1.3.8",
+
+            view_pager2            : "1.0.0"
     ]
 
     build_plugins = [
@@ -104,6 +106,8 @@ ext {
             koin_x_viewmodel       : [group: 'org.koin', name: 'koin-androidx-viewmodel', version: versions.koin],
             koin_x_fragment        : [group: 'org.koin', name: 'koin-androidx-fragment', version: versions.koin],
             koin_x_ext             : [group: 'org.koin', name: 'koin-androidx-ext', version: versions.koin],
+            // view pager 2
+            view_pager2            : [group: 'androidx.viewpager2', name: 'viewpager2', version: versions.view_pager2],
     ]
 
 

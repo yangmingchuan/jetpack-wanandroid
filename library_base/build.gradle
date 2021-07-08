@@ -49,4 +49,6 @@ dependencies {
     api depend_plugins.koin_x_ext
 
     api libs.loadsir
+
+    api depend_plugins.view_pager2
 }

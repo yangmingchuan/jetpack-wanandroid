@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation_home"
+    app:startDestination="@id/home_fragment_home">
+
+    <fragment
+        android:id="@+id/home_fragment_home"
+        android:name="com.ymc.home.HomeFragment"
+        tools:layout="@layout/home_fragment_home"/>
+
+</navigation>
