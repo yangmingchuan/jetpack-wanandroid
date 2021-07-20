@@ -11,6 +11,10 @@ import androidx.viewpager2.widget.ViewPager2.ORIENTATION_HORIZONTAL
 import kotlin.math.absoluteValue
 import kotlin.math.sign
 
+/**
+ * 嵌套滚动FragmentLayout
+ */
+
 class NestedScrollableHost : FrameLayout {
 
     constructor(context: Context) : super(context)

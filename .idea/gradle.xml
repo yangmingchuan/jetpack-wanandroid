@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/home" />
             <option value="$PROJECT_DIR$/library_base" />
             <option value="$PROJECT_DIR$/library_ijk" />
+            <option value="$PROJECT_DIR$/login" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
